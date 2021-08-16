@@ -1,0 +1,75 @@
+.Post-container{
+  background-color: #fff;
+  height: 320px;
+  min-width: 400px;
+  max-width: 500px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 6px 2px rgba(128, 128, 128, 0.2);
+  .Post{
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 24% 60% 16%;
+    .post-header{
+      cursor: pointer;
+      user-select: none;
+      padding: .8rem;
+      background-color: rgba(255, 255, 255, .8);
+      small{
+        display: block;
+        text-align: end;
+      }
+      h4{
+        padding:1.4rem .8rem;
+      }
+    }
+    .post-body{
+      overflow-y:scroll;
+      padding: 1.6rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      scrollbar-width: none;
+      p{
+        white-space: pre-wrap;
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .post-footer{
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.4rem;
+      background-color: rgba(255, 255, 255, .8);
+      .icons{
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        div{
+          margin-right:1rem;
+          cursor:pointer;
+        }
+        p{
+          span{
+            &:hover{
+              color: red;
+              cursor: pointer;
+            }
+          }
+          .yes:hover{
+            color: rgb(0, 255, 0);
+          }
+          .no:hover{
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

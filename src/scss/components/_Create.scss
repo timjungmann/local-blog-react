@@ -1,0 +1,50 @@
+.Create{
+  width: 100%;
+  margin: 0 auto 40px;
+  form{
+    display: grid;
+    grid-template-columns: 120px auto;
+    gap: 1rem;
+    margin: auto;
+    .title{
+      width: 120px;
+      height: fit-content;
+      border: 3px dotted rgba(255, 255, 255,0.3);
+      padding: .6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    input, textarea{
+      margin-bottom: 2rem;
+      background-color: rgba(255, 255, 255,0.2);
+      width: 80%;
+      min-width:600px;
+      border: none;
+      border-radius: 3px;
+      padding: 1rem;
+      border-left: none;
+      &::placeholder{
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 1.6rem;
+      }
+      &:focus{
+        background-color: rgba(255, 255, 255,0.4);
+        box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.4);
+        outline: none;
+        &::placeholder{
+          opacity: 0;
+        }
+      }
+    }
+    textarea{
+      resize: none;
+      min-height: 100px;
+    }
+    @include button;
+  }
+  .color{
+    margin-bottom: 2rem;
+    @include slider;
+  }
+}

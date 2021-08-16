@@ -1,0 +1,32 @@
+@mixin slider{
+  input[type=range] {
+    transform: scaleX(-1);
+    background-color: rgba(255, 255, 255,0);
+    margin-right: 2rem;
+    transition: $col-transition;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 16px;
+    padding: 2px;
+    box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    &::-webkit-slider-thumb{
+      -webkit-appearance: none;
+      appearance: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255,0.3);
+      box-shadow: inset 0 0 8px 1px rgba(0, 0, 0, 0.2);
+      cursor: pointer; /* Cursor on hover */
+    }
+  }
+}
+
+@mixin button{
+  button{
+    padding: .6rem;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+  }
+}

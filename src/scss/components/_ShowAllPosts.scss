@@ -1,0 +1,10 @@
+.show-posts{
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  p{
+    color: rgba(0, 0, 0, 0.8);
+  }
+}

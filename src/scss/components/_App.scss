@@ -1,0 +1,26 @@
+.App{
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  padding: 4rem;
+  transition: $col-transition;
+  h2{
+    width: fit-content;
+    user-select: none;
+    margin:2rem 0;
+    cursor: pointer;
+  }
+  .dark-mode{
+    cursor: pointer;
+    position: absolute;
+    font-size: 3.4rem;
+    top:1rem;
+    right:2rem;
+  }
+  // .inner-box{
+  //   height: 100%;
+  //   padding: 5px;
+  //   outline: 1px solid black;
+  // }
+}

@@ -1,0 +1,93 @@
+.modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  .modal-inner-container{
+    margin-right: 6.2rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 2px;
+    .close{
+      user-select: none;
+      cursor:pointer;
+      font-size: 4rem;
+      color: white;
+      position: absolute;
+      top: -1.5rem;
+      right: -3.5rem;
+    }
+    .modal-inner{
+      border-radius: 2px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 12% 80% 8%;
+      width: 800px;
+      height: 600px;
+      background-color: white;
+      .modal-header{
+        user-select: none;
+        padding: 1.5rem 2rem;
+        background-color: rgba(255, 255, 255, .6);
+        small{
+          display: block;
+          text-align: end;
+        }
+        h4{
+          padding: 0 .5rem;
+        }
+      }
+      .modal-body{
+        overflow-y:scroll;
+        padding: 3rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        scrollbar-width: none;
+        p{
+          color: rgba(0, 0, 0, 0.8);
+          white-space: pre-wrap;
+        }
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      .modal-footer{
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 2rem;
+        background-color: rgba(255, 255, 255, .6);
+        .modal-icons{
+          display: flex;
+          align-items: center;
+          font-size: 1.4rem;
+          div{
+            margin-right:1rem;
+            cursor:pointer;
+          }
+          p{
+            span{
+              cursor: pointer;
+            }
+            .yes:hover{
+              color: rgb(0, 255, 0);
+            }
+            .no:hover{
+              color: rgb(255, 0, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

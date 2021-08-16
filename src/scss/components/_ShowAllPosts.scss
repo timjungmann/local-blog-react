@@ -1,10 +1,22 @@
 .show-posts{
-  max-width: 1600px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: auto;
   gap: 2rem;
-  padding: 2rem;
   p{
     color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@media screen and (max-width: 1400px){
+  .show-posts{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0rem;
+  }
+}
+
+@media screen and (max-width: 955px){
+  .show-posts{
+    grid-template-columns: 1fr;
   }
 }

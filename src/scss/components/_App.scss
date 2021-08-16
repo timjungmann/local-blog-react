@@ -18,9 +18,26 @@
     top:1rem;
     right:2rem;
   }
-  // .inner-box{
-  //   height: 100%;
-  //   padding: 5px;
-  //   outline: 1px solid black;
-  // }
+  .help-qmark{
+    z-index: 5;
+    user-select: none;
+    position: fixed;
+    top:3rem;
+    right:4rem;
+    font-size: 2.4rem;
+    cursor:pointer;
+    &:hover{
+      text-shadow: 0 0 20px black;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .App{
+    padding: 4rem 2rem;
+    .help-qmark{
+      top:2rem;
+      right:2rem;
+    }
+  }
 }

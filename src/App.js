@@ -8,6 +8,7 @@ import ShowModalContext from "./Context/ShowModalContext";
 import Create from './Components/Create';
 import ShowAllPosts from './Components/ShowAllPosts';
 import Home from './Components/Home';
+import Help from './Components/Help';
 
 function App() {
   const postsInitital = localStorage.length > 0 ? JSON.parse(localStorage.getItem("data")) : [];
@@ -18,9 +19,13 @@ function App() {
   const [all, setAll] = useState (false);
   const [edit, setEdit] = useState("");
   const [show, setShow] = useState("");
+  const [help, setHelp] = useState(false);
 
   return (
     <div className="App" style={{backgroundColor: `rgb(${color.r}, ${color.g}, ${color.b}, .8)`, overflowY: `${show != "" || edit != ""? "hidden" : ""}`, paddingRight: `${show != "" || edit != "" ? "55px" : ""}`}}>
+      <div onClick={()=>help ? setHelp(false) : setHelp(true)} className="help-qmark">{help ? "×" : "?"}</div>
+      {help ? <Help help={help}/> : null}
+
       <ShowModalContext.Provider value={{show, setShow, edit, setEdit}}>
         <PostContext.Provider value={{posts, setPosts}}>
           <ColorContext.Provider value={{color, setColor}}>

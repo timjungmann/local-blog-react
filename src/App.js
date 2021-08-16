@@ -10,7 +10,9 @@ import ShowAllPosts from './Components/ShowAllPosts';
 import Home from './Components/Home';
 
 function App() {
-  const [posts, setPosts] =  useState([]);
+  const postsInitital = localStorage.length > 0 ? JSON.parse(localStorage.getItem("data")) : [];
+
+  const [posts, setPosts] =  useState(postsInitital);
   const [color, setColor] = useState({"r": 255, "g":255, "b":255});
   const [create, setCreate] = useState(false);
   const [all, setAll] = useState (false);

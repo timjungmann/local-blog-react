@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import PostContext from '../Context/PostContext';
 import ShowModalContext from '../Context/ShowModalContext';
@@ -25,6 +25,10 @@ export default function Post() {
     });
     setPosts(newPosts);
   }
+
+  useEffect(()=>{
+    localStorage.setItem("data", JSON.stringify(posts));
+  })
   
   return(
     posts.map((entry)=>{

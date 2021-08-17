@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React, {useState, useEffect} from 'react';
 
 import PostContext from "./Context/PostContext";
 import ColorContext from "./Context/ColorContext";
@@ -20,6 +19,12 @@ function App() {
   const [edit, setEdit] = useState("");
   const [show, setShow] = useState("");
   const [help, setHelp] = useState(false);
+
+  useEffect(() => {
+    const close = (e) => e.key === 'Escape' ? setHelp("") : null;
+    window.addEventListener('keydown', close);
+    return () => window.removeEventListener('keydown', close);
+  },[]);
 
   return (
     <div className="App" style={{backgroundColor: `rgb(${color.r}, ${color.g}, ${color.b}, .8)`, overflowY: `${show != "" || edit != ""? "hidden" : ""}`, paddingRight: `${show != "" || edit != "" ? "55px" : ""}`}}>

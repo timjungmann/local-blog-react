@@ -35,12 +35,6 @@ export default function EditModal({entry}) {
     setPosts(newPosts);
   }
 
-  useEffect(() => {
-    const close = (e) => e.key === 'Escape' ? setShow("") : null;
-    window.addEventListener('keydown', close);
-    return () => window.removeEventListener('keydown', close);
-  },[]);
-
   function saveChanges(){
     if(entry.title !== title || entry.content !== content){
       const newPosts = posts.filter((post)=>{
@@ -79,7 +73,7 @@ export default function EditModal({entry}) {
       setChange(false);
       setEdit("");
     }
-  }
+  };
 
   return (
     <div className="modal">

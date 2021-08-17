@@ -31,7 +31,7 @@
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
         outline: none;
         &::placeholder{
-          transition: opacity .6s;
+          transition: opacity .4s;
           opacity: 0;
         }
       }

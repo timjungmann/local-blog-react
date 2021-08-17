@@ -36,7 +36,7 @@ export default function Post() {
         <div key={entry.id} className="Post-container">
           <div className="Post" style={{backgroundColor: entry.color}}>
             <div onClick={()=>setShow(entry)} className="post-header">
-              <small>{entry.time}</small>
+              <small>{entry.updated != "" ? <>last: {entry.updated}</> : <>{entry.time}</>}</small>
               <h4>{entry.title}</h4>
             </div>
             <div className="post-body">
@@ -48,7 +48,10 @@ export default function Post() {
                 <div onClick={()=>wannaRemove(entry.id)}>❌</div>
                 {remove == entry.id ? <p className="sure">delete? <span onClick={()=>removePost(entry.id)}  className="yes">y</span> / <span onClick={()=>setRemove("")}  className="no">n</span></p> : null}
               </div>
-              {entry.updated != "" ? <p><small>updated {entry.updated}</small></p> : null}
+              {/* {entry.updated != "" ? <p><small>updated {entry.updated}</small></p> : null} */}
+              <div className="download">
+              <div>📥</div>
+            </div>
             </div>
           </div>
         </div>

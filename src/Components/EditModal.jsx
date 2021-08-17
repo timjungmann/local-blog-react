@@ -64,7 +64,12 @@ export default function EditModal({entry}) {
     setTitle(entry.title);
     setContent(entry.content);
     setChange(false);
-    setEdit("");
+    if(save){
+      setShow(edit);
+      setEdit("");
+    } else{
+      setEdit("");
+    }
   }
 
   function closeOrNot(){
@@ -83,7 +88,7 @@ export default function EditModal({entry}) {
         {change ? <div className="change">save?<br/><span  className="yes" onClick={saveChanges}>y</span> / <span className="no" onClick={noChanges}>n</span></div> : null}
         <div className="modal-inner" style={{backgroundColor: `${entry.color}`}}>
           <div className="modal-header">
-            <small>{entry.time}</small>
+          <small>{entry.updated != "" ? <>last: {entry.updated}</> : <>{entry.time}</>}</small>
             <input onChange={(e)=>setTitle(e.target.value)} value={title} type="text" maxLength="35"/>
           </div>
           <div className="modal-body modal-edit-body">
@@ -99,7 +104,10 @@ export default function EditModal({entry}) {
               {save == entry.id ? <p className="sure">save? <span onClick={saveChanges} className="yes">y</span> / <span onClick={noChanges} className="no">n</span></p> : null}
 
             </div>
-            {entry.updated != "" ? <p><small>updated {entry.updated}</small></p> : null}
+            {/* {entry.updated != "" ? <p><small>updated {entry.updated}</small></p> : null} */}
+            <div className="modal-download">
+              <div>📥</div>
+            </div>
           </div>
         </div>
       </div>

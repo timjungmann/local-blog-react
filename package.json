@@ -1,8 +1,8 @@
 {
-  "name": "local-blog-react",
+  "name": "mood-pad",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://timjungmann.github.io/local-blog-react",
+  "homepage": "http://timjungmann.github.io/mood-pad",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

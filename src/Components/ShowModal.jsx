@@ -37,7 +37,7 @@ export default function ShowModal({entry}) {
         <div onClick={()=>setShow("")} className="close">×</div>
         <div className="modal-inner" style={{backgroundColor: `${entry.color}`}}>
           <div className="modal-header">
-            <small>{entry.time}</small>
+          <small>{entry.updated != "" ? <>last: {entry.updated}</> : <>{entry.time}</>}</small>
             <h4>{entry.title}</h4>
           </div>
           <div className="modal-body">
@@ -49,7 +49,10 @@ export default function ShowModal({entry}) {
               <div onClick={()=>wannaRemove(entry.id)}>❌</div>
               {remove == entry.id ? <p className="sure">delete? <span onClick={()=>removePost(entry.id)} className="yes">y</span> / <span onClick={()=>setRemove("")} className="no">n</span></p> : null}
             </div>
-            {entry.updated != "" ? <p><small>updated {entry.updated}</small></p> : null}
+            {/* {entry.updated != "" ? <p><small>updated {entry.updated}</small></p> : null} */}
+            <div className="modal-download">
+              <div>📥</div>
+            </div>
           </div>
         </div>
       </div>

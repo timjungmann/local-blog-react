@@ -22,7 +22,8 @@
     .modal-inner{
       .modal-header{
         input{
-          width: 350px;
+          width: 346px;
+          margin-top: 1.5rem;
           background-color: rgba(255, 255, 255, 0.1);
           outline: 3px dotted rgba(0, 0, 0, 0.2);
           padding: .5rem;
@@ -56,6 +57,28 @@
         padding: 2rem;
       }
       .modal-footer{
+      }
+    }
+  }
+}
+
+@media screen and(max-width:768px){
+  .modal{
+    .modal-inner-container{
+      .modal-inner{
+        .modal-header{
+          input{
+            margin-top:2rem;
+          }
+        }
+        .modal-body{
+          textarea{
+            padding: .5rem;
+          }
+        }
+        .modal-edit-body{
+          padding: 1rem;
+        }
       }
     }
   }

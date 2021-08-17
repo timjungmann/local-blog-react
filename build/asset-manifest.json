@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/local-blog-react/static/css/main.c7fd53b5.chunk.css",
-    "main.js": "/local-blog-react/static/js/main.0f70d6ab.chunk.js",
-    "main.js.map": "/local-blog-react/static/js/main.0f70d6ab.chunk.js.map",
-    "runtime-main.js": "/local-blog-react/static/js/runtime-main.88f5ccb2.js",
-    "runtime-main.js.map": "/local-blog-react/static/js/runtime-main.88f5ccb2.js.map",
-    "static/js/2.856691e4.chunk.js": "/local-blog-react/static/js/2.856691e4.chunk.js",
-    "static/js/2.856691e4.chunk.js.map": "/local-blog-react/static/js/2.856691e4.chunk.js.map",
-    "index.html": "/local-blog-react/index.html",
-    "static/css/main.c7fd53b5.chunk.css.map": "/local-blog-react/static/css/main.c7fd53b5.chunk.css.map",
-    "static/js/2.856691e4.chunk.js.LICENSE.txt": "/local-blog-react/static/js/2.856691e4.chunk.js.LICENSE.txt"
+    "main.css": "/mood-pad/static/css/main.dc470c16.chunk.css",
+    "main.js": "/mood-pad/static/js/main.0a9e2673.chunk.js",
+    "main.js.map": "/mood-pad/static/js/main.0a9e2673.chunk.js.map",
+    "runtime-main.js": "/mood-pad/static/js/runtime-main.96d89866.js",
+    "runtime-main.js.map": "/mood-pad/static/js/runtime-main.96d89866.js.map",
+    "static/js/2.4f72d43f.chunk.js": "/mood-pad/static/js/2.4f72d43f.chunk.js",
+    "static/js/2.4f72d43f.chunk.js.map": "/mood-pad/static/js/2.4f72d43f.chunk.js.map",
+    "index.html": "/mood-pad/index.html",
+    "static/css/main.dc470c16.chunk.css.map": "/mood-pad/static/css/main.dc470c16.chunk.css.map",
+    "static/js/2.4f72d43f.chunk.js.LICENSE.txt": "/mood-pad/static/js/2.4f72d43f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.88f5ccb2.js",
-    "static/js/2.856691e4.chunk.js",
-    "static/css/main.c7fd53b5.chunk.css",
-    "static/js/main.0f70d6ab.chunk.js"
+    "static/js/runtime-main.96d89866.js",
+    "static/js/2.4f72d43f.chunk.js",
+    "static/css/main.dc470c16.chunk.css",
+    "static/js/main.0a9e2673.chunk.js"
   ]
 }

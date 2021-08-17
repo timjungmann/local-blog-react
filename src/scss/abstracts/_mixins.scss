@@ -10,6 +10,7 @@
     padding: 2px;
     box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, 0.2);
     &::-webkit-slider-thumb{
+      cursor:pointer;
       -webkit-appearance: none;
       appearance: none;
       width: 28px;
@@ -17,16 +18,21 @@
       border-radius: 50%;
       background: rgba(255, 255, 255,0.4);
       box-shadow: inset 0 0 8px 1px rgba(0, 0, 0, 0.2);
-      cursor: pointer; /* Cursor on hover */
     }
   }
 }
 
 @mixin button{
   button{
+    cursor: pointer;
     padding: .6rem;
     width: fit-content;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.15);
     border: 2px solid rgba(0, 0, 0, 0.2);
+    &:disabled{
+      cursor:not-allowed;
+      border: 2px solid rgba(0, 0, 0, 0.1);
+      color: rgba(0, 0, 0,.4);
+    }
   }
 }

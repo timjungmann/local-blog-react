@@ -9,7 +9,8 @@
     .title{
       width: 120px;
       height: fit-content;
-      border: 3px dotted rgba(255, 255, 255,0.3);
+      background-color: rgba(255, 255, 255, 0.15);;
+      border: 3px dotted rgba(0, 0, 0, 0.1);
       padding: .6rem;
       display: flex;
       align-items: center;
@@ -17,20 +18,20 @@
     }
     input, textarea{
       margin-bottom: 2rem;
-      background-color: rgba(255, 255, 255,0.2);
+      background-color: rgba(0, 0, 0, 0.05);
       border: none;
       border-radius: 3px;
       padding: 1rem;
-      border-left: none;
       &::placeholder{
-        color: rgba(0, 0, 0, 0.3);
+        color: rgba(0, 0, 0, 0.5);
         font-size: 1.6rem;
       }
       &:focus{
-        background-color: rgba(255, 255, 255,0.4);
-        box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.4);
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
         outline: none;
         &::placeholder{
+          transition: opacity .6s;
           opacity: 0;
         }
       }

@@ -44,6 +44,9 @@
       width: 100%;
       resize: none;
       min-height: 200px;
+      &::-webkit-scrollbar{
+        opacity:0;
+      }
     }
     @include button;
   }

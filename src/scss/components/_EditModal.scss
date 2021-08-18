@@ -50,6 +50,9 @@
           &:focus{
             background-color: rgba(255, 255, 255, 0.3);
           }
+          &::-webkit-scrollbar{
+            opacity:0;
+          }
         }
       }
       .modal-edit-body{

@@ -1,5 +1,4 @@
 import React, {useContext, useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
 import PostContext from '../Context/PostContext';
 import ShowModalContext from '../Context/ShowModalContext';
 
@@ -23,7 +22,13 @@ export default function Post() {
     const newPosts = posts.filter((post)=>{
       return post.id != id;
     });
-    setPosts(newPosts);
+    console.log(newPosts.length);
+    if(newPosts.length == 0){
+      setPosts([]);
+      localStorage.clear();
+    } else{
+      setPosts(newPosts);
+    }
   }
 
   useEffect(()=>{

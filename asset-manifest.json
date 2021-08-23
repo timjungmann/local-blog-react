@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mood-pad/static/css/main.04566245.chunk.css",
+    "main.css": "/mood-pad/static/css/main.6ef2b922.chunk.css",
     "main.js": "/mood-pad/static/js/main.2318708c.chunk.js",
     "main.js.map": "/mood-pad/static/js/main.2318708c.chunk.js.map",
     "runtime-main.js": "/mood-pad/static/js/runtime-main.96d89866.js",
@@ -8,13 +8,13 @@
     "static/js/2.56725b6f.chunk.js": "/mood-pad/static/js/2.56725b6f.chunk.js",
     "static/js/2.56725b6f.chunk.js.map": "/mood-pad/static/js/2.56725b6f.chunk.js.map",
     "index.html": "/mood-pad/index.html",
-    "static/css/main.04566245.chunk.css.map": "/mood-pad/static/css/main.04566245.chunk.css.map",
+    "static/css/main.6ef2b922.chunk.css.map": "/mood-pad/static/css/main.6ef2b922.chunk.css.map",
     "static/js/2.56725b6f.chunk.js.LICENSE.txt": "/mood-pad/static/js/2.56725b6f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.96d89866.js",
     "static/js/2.56725b6f.chunk.js",
-    "static/css/main.04566245.chunk.css",
+    "static/css/main.6ef2b922.chunk.css",
     "static/js/main.2318708c.chunk.js"
   ]
 }

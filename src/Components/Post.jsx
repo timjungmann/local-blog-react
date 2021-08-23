@@ -55,7 +55,7 @@ export default function Post() {
               </div>
               {/* {entry.updated != "" ? <p><small>updated {entry.updated}</small></p> : null} */}
               <div className="download">
-              <div>📥</div>
+              {/* <div>📥</div> */}
             </div>
             </div>
           </div>

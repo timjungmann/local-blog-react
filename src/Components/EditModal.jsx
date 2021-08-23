@@ -100,7 +100,7 @@ export default function EditModal({entry}) {
             </div>
             {/* {entry.updated != "" ? <p><small>updated {entry.updated}</small></p> : null} */}
             <div className="modal-download">
-              <div>📥</div>
+              {/* <div>📥</div> */}
             </div>
           </div>
         </div>

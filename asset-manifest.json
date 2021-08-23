@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/mood-pad/static/css/main.d4cd3a8e.chunk.css",
-    "main.js": "/mood-pad/static/js/main.23c6d6d2.chunk.js",
-    "main.js.map": "/mood-pad/static/js/main.23c6d6d2.chunk.js.map",
+    "main.css": "/mood-pad/static/css/main.97f45a90.chunk.css",
+    "main.js": "/mood-pad/static/js/main.142260da.chunk.js",
+    "main.js.map": "/mood-pad/static/js/main.142260da.chunk.js.map",
     "runtime-main.js": "/mood-pad/static/js/runtime-main.96d89866.js",
     "runtime-main.js.map": "/mood-pad/static/js/runtime-main.96d89866.js.map",
     "static/js/2.56725b6f.chunk.js": "/mood-pad/static/js/2.56725b6f.chunk.js",
     "static/js/2.56725b6f.chunk.js.map": "/mood-pad/static/js/2.56725b6f.chunk.js.map",
     "index.html": "/mood-pad/index.html",
-    "static/css/main.d4cd3a8e.chunk.css.map": "/mood-pad/static/css/main.d4cd3a8e.chunk.css.map",
+    "static/css/main.97f45a90.chunk.css.map": "/mood-pad/static/css/main.97f45a90.chunk.css.map",
     "static/js/2.56725b6f.chunk.js.LICENSE.txt": "/mood-pad/static/js/2.56725b6f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.96d89866.js",
     "static/js/2.56725b6f.chunk.js",
-    "static/css/main.d4cd3a8e.chunk.css",
-    "static/js/main.23c6d6d2.chunk.js"
+    "static/css/main.97f45a90.chunk.css",
+    "static/js/main.142260da.chunk.js"
   ]
 }

@@ -27,7 +27,7 @@ function App() {
   },[]);
 
   return (
-    <div className="App" style={{backgroundColor: `rgb(${color.r}, ${color.g}, ${color.b}, .8)`, overflowY: `${show != "" || edit != ""? "hidden" : ""}`, paddingRight: `${show != "" || edit != "" ? "55px" : ""}`}}>
+    <div className="App" style={{backgroundColor: `rgb(${color.r}, ${color.g}, ${color.b}, .8)`, display: `${show != "" || edit != "" ? "fixed" : ""}`, paddingRight: `${show != "" || edit != "" ? "55px" : ""}`}}>
       <div onClick={()=>help ? setHelp(false) : setHelp(true)} className={help ? "help-x": "help-qmark"}>{help ? <span>×</span> : <span>?</span>}</div>
       {help ? <Help help={help}/> : null}
 

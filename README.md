@@ -4,7 +4,7 @@
 
 ### Pick a color based on your mood and write a blog-style entry.
 
-<a href="timjungmann.github.io/mood-pad/" target="_blank">try it out ↗︎</a>
+[try it out ↗︎](timjungmann.github.io/mood-pad/)
 
 All entries are stored in your browser's local storage, clearing your cache will erase them.
 

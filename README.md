@@ -7,7 +7,7 @@ Concept, Design & Development: Tim Jungmann
 
 ### Pick a color based on your mood and write a blog-style entry.
 
-[try it out ↗︎](timjungmann.github.io/mood-pad/)
+[try it out ↗︎](https://timjungmann.github.io/mood-pad/)
 
 All entries are stored in your browser's local storage, clearing your cache will erase them.
 
